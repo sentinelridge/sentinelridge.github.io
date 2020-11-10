@@ -1,0 +1,172 @@
+/* Basic background image styling. */
+
+.background-image {
+    background-image: url('images/bg-image-0.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 0;
+    min-height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+/* Styles for the alternating / transition effect. */
+
+.toggle-image {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 800px;
+    transition: opacity 2s ease-in-out;
+}
+
+/* Styles for the specific images. */
+
+.first-image {
+    background-image: url('images/bg-image-0.jpg');
+    z-index: -4;
+    opacity: 0;
+}
+
+.second-image {
+    background-image: url('images/bg-image-1.jpg');
+    z-index: -3;
+    opacity: 0;
+}
+
+.third-image {
+    background-image: url('images/bg-image-2.jpg');
+    z-index: -2;
+    opacity: 0;
+}
+
+.first-image.show {
+    opacity: 1;
+}
+
+.second-image.show {
+    opacity: 1;
+}
+
+.third-image.show {
+    opacity: 1;
+}
+
+html, body{
+    padding: 0px !important;
+    margin: 0px !important;
+    font-family: 'Noto Sans TC', sans-serif;
+    overflow: hidden
+}
+
+ul {
+    z-index: 4;
+    list-style-type: none;
+    margin: 1.7em;
+    padding: 0;
+    overflow: hidden;
+    font-size: .925rem;
+}
+
+li {
+    z-index: 4;
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.title-li {
+    float: left;
+    border: #ffffff solid 1px;
+}
+
+.overlay {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.title {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    text-align: center;
+    height: 500px;
+    margin: auto;
+}
+
+.line-container {
+    margin: auto;
+    width: 50%;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4.25em;
+    color: #fff;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2.2em;
+    color: #fff;
+    margin-top: 16px;
+    font-weight: 400;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #6c757d;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: .8125rem;
+}
+
+.nav-icon {
+    margin-right: 12px;
+}
+
+@media only screen and (max-device-width: 720px) {
+    ul {
+        font-size: 21px;
+    }
+
+    .footer {
+        font-size: 21px;
+    }
+}
