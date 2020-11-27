@@ -1,1 +1,0 @@
-# sentinelridge.github.io
